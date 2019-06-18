@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bilgilerimi Güncelle"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp"
+            android:textColor="#fff"
+            android:background="#7C7C7C"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ProfileImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:civ_border_color="#fff"
+        app:civ_border_width="5dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"/>
+        <ProgressBar
+            android:id="@+id/UploadProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/global_edittext_style"
+                android:src="@drawable/ic_create_black_24dp"/>
+            <EditText
+                android:id="@+id/NameAndSurnameET"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:hint="Adınız ve Soyadınız"
+                android:layout_height="35dp"
+                android:background="@drawable/global_edittext_style"
+                android:layout_marginBottom="30dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_create_black_24dp"
+                android:background="@drawable/global_edittext_style"/>
+            <EditText
+                android:id="@+id/UserNameET"
+                android:layout_width="match_parent"
+                android:hint="Kullanıcı Adınız"
+                android:textAlignment="center"
+                android:layout_height="35dp"
+                android:background="@drawable/global_edittext_style"
+                android:layout_marginBottom="30dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_create_black_24dp"
+                android:background="@drawable/global_edittext_style"/>
+            <EditText
+                android:id="@+id/EmailET"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textAlignment="center"
+                android:hint="E-Posta Adresiniz"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/global_edittext_style"
+                android:layout_marginBottom="30dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_create_black_24dp"
+                android:background="@drawable/global_edittext_style"/>
+            <EditText
+                android:id="@+id/PassET"
+                android:layout_width="match_parent"
+                android:hint="Parolanız"
+                android:textAlignment="center"
+                android:layout_height="35dp"
+                android:inputType="textPassword"
+                android:background="@drawable/global_edittext_style"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/SendBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/global_edittext_icon"
+            android:textColor="#fff"
+            android:text="Değişiklikleri Kaydet"/>
+
+</LinearLayout>
+
+</RelativeLayout>

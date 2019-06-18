@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@drawable/outline_drag_handle_black_24"/>
+                <EditText
+                    android:id="@+id/KayitName_Surname"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="İsim Soyisim"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:typeface="sans"
+                    android:background="#B47322"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@drawable/outline_account_box_black_24"/>
+
+                <EditText
+                    android:id="@+id/KayitUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="Kullanıcı Adı"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:typeface="sans"
+                    android:background="#B47322"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@drawable/outline_local_post_office_black_24"/>
+
+                <EditText
+                    android:id="@+id/KayitEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="E-Posta"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:typeface="sans"
+                    android:background="#B47322"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@drawable/outline_lock_black_24"/>
+
+                <EditText
+                    android:id="@+id/KayitParola"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="Parola"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:typeface="sans"
+                    android:background="#B47322"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@drawable/outline_lock_black_24"/>
+
+                <EditText
+                    android:id="@+id/KayitParolaTekrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="Parola Tekrar"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:typeface="sans"
+                    android:background="#B47322"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/KayitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#020001"
+                android:text="Kayıt Ol"
+                android:textStyle="bold"
+                android:textColor="#F29925"/>
+
+            <RadioGroup
+                android:id="@+id/KayitRadioBtn"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/KayitUserRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bireysel"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <RadioButton
+                    android:id="@+id/KayitShelterRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Kurumsal" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/user_nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Anasayfa"
+            />
+        <item android:id="@+id/user_nav_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Profil"
+            />
+        <item android:id="@+id/user_nav_donate"
+            android:icon="@drawable/ic_pets_black_24dp"
+            android:title="Bağış Yap"/>
+
+        <item android:id="@+id/user_nav_donatelist"
+            android:icon="@drawable/ic_pets_black_24dp"
+            android:title="Bağışlarım"/>
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item android:id="@+id/user_nav_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Ayarlar"/>
+            <item android:id="@+id/user_nav_exit"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="Çıkış Yap"/>
+        </menu>
+    </item>
+
+</menu>
